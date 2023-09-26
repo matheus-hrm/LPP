@@ -1,0 +1,1 @@
+## Repositório criado para a disciplina de Linguagens e Paradigmas de Programação

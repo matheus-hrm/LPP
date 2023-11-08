@@ -11,3 +11,11 @@
 )
 
 ; -> '((1 2 3) 4 (5))
+(cons 'banana
+  (cons 
+    (cons 'uva (cons 'pera '()) ) 
+    (cons 
+      (cons 'maca '())
+    )
+  )
+'())

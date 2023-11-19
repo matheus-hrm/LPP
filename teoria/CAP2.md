@@ -19,18 +19,21 @@
                        | <arithmetic_expression> "!=" <arithmetic_expression>
                        | <arithmetic_expression> "<=" <arithmetic_expression>
                        | <arithmetic_expression> ">=" <arithmetic_expression>
+   ````
+   
 3. **Prova de ambiguidade da gramática** A gramática fornecida é ambígua porque a produção <A> -> <A> + <A> | <ID> pode levar a múltiplas interpretações. Não está claro qual <A> deve ser expandido primeiro durante a análise sintática, levando a ambiguidades na derivação da árvore sintática.
 
 4. **Descrições EBNF**
   
    - Union Em C
   
-   ```bnf
+  ```bnf
   <union> ::= <type1> | <type2> | ...
-  ```
+  ````
   
-  - Chamada a método em Java
-  ````bnf
+   - Chamada a método em Java
+    
+  ```bnf
   <method_call> ::= <identifier> "(" [<argument_list>] ")"
   <argument_list> ::= <expression> | <expression> "," <argument_list>
   <expression> ::= ...  // Definir expressões válidas para a chamada do método
